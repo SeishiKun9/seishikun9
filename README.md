@@ -1,16 +1,14 @@
-## Hi there 👋
+just a guy who codes, breaks Linux, fixes Linux, and somehow breaks it again
 
-<!--
-**SeishiKun9/seishikun9** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+💻 BSIT student
+🐧 CachyOS enjoyer
+⚛️ Web dev enjoyer
+🎮 gamer
+🎨 anime rice addict
+🍬 powered by questionable amounts of sugar
+🤖 professional vibe coder
 
-Here are some ideas to get you started:
+currently building random shit and pretending I know what I'm doing.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> if it works, don't touch it.
+> if it doesn't work, blame the config.
