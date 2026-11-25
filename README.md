@@ -1,23 +1,11 @@
 <div align="center">
 
 <a href="https://github.com/SeishiKun9">
-  <img src="./assets/hero.svg" alt="SeishiKun9 — Animated Universe Profile Header" width="100%" />
+  <img src="./assets/universe.svg" alt="SeishiKun9 — Seamless Animated Deep-Space GitHub Profile" width="100%" />
 </a>
 
-[GitHub](https://github.com/SeishiKun9) · [Email](mailto:seishikun7@gmail.com)
+[GitHub](https://github.com/SeishiKun9) · [Email](mailto:seishikun7@gmail.com) · [All Repositories](https://github.com/SeishiKun9?tab=repositories)
 
-<img src="./assets/tech-stack.svg" alt="Animated Planetary Tech Stack" width="100%" />
-
-<img src="./assets/telemetry.svg" alt="Cosmic Telemetry: Streak, Commits, Contributions, PRs, Stars, and Languages" width="100%" />
-
-<img src="./assets/contributions.svg" alt="365-Day Contribution Galaxy and 30-Day Activity Wave" width="100%" />
-
-<a href="https://github.com/SeishiKun9?tab=repositories">
-  <img src="./assets/repositories.svg" alt="Featured Repositories Star Map" width="100%" />
-</a>
-
-**Quick Jump:** [SeishiKun9](https://github.com/SeishiKun9/SeishiKun9) · [nebula-ui](https://github.com/SeishiKun9) · [orbit-api](https://github.com/SeishiKun9) · [cosmos-cli](https://github.com/SeishiKun9)
-
-<img src="./assets/footer.svg" alt="Animated Cosmic Horizon Footer" width="100%" />
+**Repositories:** [seishikun9](https://github.com/SeishiKun9/seishikun9) · [nebula-ui](https://github.com/SeishiKun9) · [orbit-api](https://github.com/SeishiKun9) · [cosmos-cli](https://github.com/SeishiKun9)
 
 </div>
