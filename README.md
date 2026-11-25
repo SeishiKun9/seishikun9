@@ -16,7 +16,7 @@
   <img src="./assets/repositories.svg" alt="Featured Repositories Star Map" width="100%" />
 </a>
 
-**Quick Jump:** [SeishiKun9](https://github.com/SeishiKun9/SeishiKun9) · [nebula-ui](https://github.com/SeishiKun9) · [orbit-api](https://github.com/SeishiKun9) · [cosmos-cli](https://github.com/SeishiKun9)
+**Quick Jump:** [seishikun9](https://github.com/SeishiKun9/seishikun9) · [SeiReminds](https://github.com/SeishiKun9/SeiReminds) · [Canvas-Notif](https://github.com/SeishiKun9/Canvas-Notif) · [Location-tracker-expirement-](https://github.com/SeishiKun9/Location-tracker-expirement-)
 
 <img src="./assets/footer.svg" alt="Animated Cosmic Horizon Footer" width="100%" />
 
