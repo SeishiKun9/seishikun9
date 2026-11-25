@@ -1,0 +1,49 @@
+{
+  "username": "seishikun",
+  "display_name": "seishikun",
+  "tagline": "Full-Stack Developer · Building across the code cosmos",
+  "status": "ONLINE · OPEN TO COLLABORATE",
+  "bio": [
+    "Crafting clean web apps, tools, and interactive systems across the stack.",
+    "Exploring modern architecture, sharp UI craft, and shipping things that last."
+  ],
+  "meta": {
+    "location": "Earth · Milky Way",
+    "focus": "Web & Systems",
+    "email": "seishikun7@gmail.com"
+  },
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/seishikun"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:seishikun7@gmail.com"
+    }
+  ],
+  "tech_stack": [
+    {
+      "category": "Languages",
+      "color": "#38BDF8",
+      "items": ["TypeScript", "JavaScript", "Python", "HTML/CSS", "SQL"]
+    },
+    {
+      "category": "Frontend",
+      "color": "#A78BFA",
+      "items": ["React", "Next.js", "Tailwind CSS", "Vite", "SVG/Motion"]
+    },
+    {
+      "category": "Backend",
+      "color": "#F472B6",
+      "items": ["Node.js", "REST & GraphQL", "PostgreSQL", "Supabase", "Redis"]
+    },
+    {
+      "category": "Tools & Orbit",
+      "color": "#34D399",
+      "items": ["Git", "GitHub Actions", "Docker", "Linux", "VS Code"]
+    }
+  ],
+  "featured_repos": [],
+  "footer_text": "TRANSMISSION OPEN · EXPLORE THE REPOSITORIES ABOVE"
+}

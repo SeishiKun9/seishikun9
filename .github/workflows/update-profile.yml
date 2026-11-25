@@ -1,0 +1,40 @@
+name: Update Universe Profile
+
+on:
+  schedule:
+    # Refresh live commits, contributions, languages, and repos every 12 hours
+    - cron: "0 */12 * * *"
+  push:
+    branches: [main, master]
+    paths:
+      - "profile.json"
+      - "scripts/generate.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate animated universe SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate.py
+
+      - name: Verify generated SVGs
+        run: python3 scripts/generate.py --verify-only
+
+      - name: Commit updated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ README.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh universe profile telemetry"
+            git push
+          fi

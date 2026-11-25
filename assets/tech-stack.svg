@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="312" viewBox="0 0 850 312" role="img" aria-labelledby="stack-title stack-desc">
+  <title id="stack-title">Orbital Tech Stack</title>
+  <desc id="stack-desc">Animated solar system with orbiting planets representing core languages, frameworks, backend, and tooling.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#0D1333"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="sunCore" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="35%" stop-color="#FBBF24"/>
+      <stop offset="75%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </radialGradient>
+    <radialGradient id="sunHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#F97316" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="stackClip"><rect x="1" y="1" width="848" height="310" rx="18"/></clipPath>
+    <style>
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: 'Cascadia Code', 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    @keyframes twinkleA { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+    @keyframes twinkleB { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.2; } }
+    @keyframes twinkleC { 0%, 100% { opacity: 0.45; } 40% { opacity: 0.95; } 75% { opacity: 0.15; } }
+    @keyframes nebulaBreathe { 0%, 100% { opacity: 0.42; } 50% { opacity: 0.68; } }
+    @keyframes pulseDot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.45; transform: scale(0.82); } }
+    @keyframes pulseRing { 0% { opacity: 0.75; transform: scale(0.9); } 100% { opacity: 0; transform: scale(2.2); } }
+    @keyframes spinSlow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes spinRev { from { transform: rotate(360deg); } to { transform: rotate(0deg); } }
+    @keyframes floatY { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+    @keyframes shimmer { 0% { transform: translateX(-180px); opacity: 0; } 20% { opacity: 0.55; } 80% { opacity: 0.55; } 100% { transform: translateX(880px); opacity: 0; } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    .tw1 { animation: twinkleA 3.4s ease-in-out infinite; }
+    .tw2 { animation: twinkleB 4.6s ease-in-out infinite; }
+    .tw3 { animation: twinkleC 5.8s ease-in-out infinite; }
+    .nebula { animation: nebulaBreathe 9s ease-in-out infinite; }
+    .spin-slow { animation: spinSlow 44s linear infinite; }
+    .spin-med { animation: spinSlow 24s linear infinite; }
+    .spin-rev { animation: spinRev 34s linear infinite; }
+    .float-y { animation: floatY 6.5s ease-in-out infinite; }
+    .blink { animation: blink 1.1s steps(1, end) infinite; }
+    @keyframes p1 {
+  0.00% { transform: translate(204.6px, 154.9px) scale(1.000); opacity: 0.86; }
+  4.17% { transform: translate(204.4px, 160.3px) scale(1.041); opacity: 0.90; }
+  8.33% { transform: translate(201.1px, 166.1px) scale(1.080); opacity: 0.93; }
+  12.50% { transform: translate(195.0px, 171.9px) scale(1.113); opacity: 0.96; }
+  16.67% { transform: translate(186.5px, 177.2px) scale(1.139); opacity: 0.98; }
+  20.83% { transform: translate(176.2px, 181.9px) scale(1.155); opacity: 1.00; }
+  25.00% { transform: translate(164.8px, 185.4px) scale(1.160); opacity: 1.00; }
+  29.17% { transform: translate(153.1px, 187.6px) scale(1.155); opacity: 1.00; }
+  33.33% { transform: translate(141.9px, 188.4px) scale(1.139); opacity: 0.98; }
+  37.50% { transform: translate(131.9px, 187.6px) scale(1.113); opacity: 0.96; }
+  41.67% { transform: translate(123.8px, 185.3px) scale(1.080); opacity: 0.93; }
+  45.83% { transform: translate(118.1px, 181.8px) scale(1.041); opacity: 0.90; }
+  50.00% { transform: translate(115.4px, 177.1px) scale(1.000); opacity: 0.86; }
+  54.17% { transform: translate(115.6px, 171.7px) scale(0.959); opacity: 0.82; }
+  58.33% { transform: translate(118.9px, 165.9px) scale(0.920); opacity: 0.79; }
+  62.50% { transform: translate(125.0px, 160.1px) scale(0.887); opacity: 0.76; }
+  66.67% { transform: translate(133.5px, 154.8px) scale(0.861); opacity: 0.74; }
+  70.83% { transform: translate(143.8px, 150.1px) scale(0.845); opacity: 0.72; }
+  75.00% { transform: translate(155.2px, 146.6px) scale(0.840); opacity: 0.72; }
+  79.17% { transform: translate(166.9px, 144.4px) scale(0.845); opacity: 0.72; }
+  83.33% { transform: translate(178.1px, 143.6px) scale(0.861); opacity: 0.74; }
+  87.50% { transform: translate(188.1px, 144.4px) scale(0.887); opacity: 0.76; }
+  91.67% { transform: translate(196.2px, 146.7px) scale(0.920); opacity: 0.79; }
+  95.83% { transform: translate(201.9px, 150.2px) scale(0.959); opacity: 0.82; }
+  100.00% { transform: translate(204.6px, 154.9px) scale(1.000); opacity: 0.86; }
+}
+@keyframes p2 {
+  0.00% { transform: translate(115.4px, 177.1px) scale(1.000); opacity: 0.86; }
+  4.17% { transform: translate(115.6px, 171.7px) scale(0.959); opacity: 0.82; }
+  8.33% { transform: translate(118.9px, 165.9px) scale(0.920); opacity: 0.79; }
+  12.50% { transform: translate(125.0px, 160.1px) scale(0.887); opacity: 0.76; }
+  16.67% { transform: translate(133.5px, 154.8px) scale(0.861); opacity: 0.74; }
+  20.83% { transform: translate(143.8px, 150.1px) scale(0.845); opacity: 0.72; }
+  25.00% { transform: translate(155.2px, 146.6px) scale(0.840); opacity: 0.72; }
+  29.17% { transform: translate(166.9px, 144.4px) scale(0.845); opacity: 0.72; }
+  33.33% { transform: translate(178.1px, 143.6px) scale(0.861); opacity: 0.74; }
+  37.50% { transform: translate(188.1px, 144.4px) scale(0.887); opacity: 0.76; }
+  41.67% { transform: translate(196.2px, 146.7px) scale(0.920); opacity: 0.79; }
+  45.83% { transform: translate(201.9px, 150.2px) scale(0.959); opacity: 0.82; }
+  50.00% { transform: translate(204.6px, 154.9px) scale(1.000); opacity: 0.86; }
+  54.17% { transform: translate(204.4px, 160.3px) scale(1.041); opacity: 0.90; }
+  58.33% { transform: translate(201.1px, 166.1px) scale(1.080); opacity: 0.93; }
+  62.50% { transform: translate(195.0px, 171.9px) scale(1.113); opacity: 0.96; }
+  66.67% { transform: translate(186.5px, 177.2px) scale(1.139); opacity: 0.98; }
+  70.83% { transform: translate(176.2px, 181.9px) scale(1.155); opacity: 1.00; }
+  75.00% { transform: translate(164.8px, 185.4px) scale(1.160); opacity: 1.00; }
+  79.17% { transform: translate(153.1px, 187.6px) scale(1.155); opacity: 1.00; }
+  83.33% { transform: translate(141.9px, 188.4px) scale(1.139); opacity: 0.98; }
+  87.50% { transform: translate(131.9px, 187.6px) scale(1.113); opacity: 0.96; }
+  91.67% { transform: translate(123.8px, 185.3px) scale(1.080); opacity: 0.93; }
+  95.83% { transform: translate(118.1px, 181.8px) scale(1.041); opacity: 0.90; }
+  100.00% { transform: translate(115.4px, 177.1px) scale(1.000); opacity: 0.86; }
+}
+@keyframes p3 {
+  0.00% { transform: translate(222.4px, 176.7px) scale(1.113); opacity: 0.96; }
+  4.17% { transform: translate(207.3px, 186.3px) scale(1.139); opacity: 0.98; }
+  8.33% { transform: translate(189.0px, 194.6px) scale(1.155); opacity: 1.00; }
+  12.50% { transform: translate(168.7px, 200.9px) scale(1.160); opacity: 1.00; }
+  16.67% { transform: translate(147.8px, 204.9px) scale(1.155); opacity: 1.00; }
+  20.83% { transform: translate(127.8px, 206.2px) scale(1.139); opacity: 0.98; }
+  25.00% { transform: translate(109.9px, 204.7px) scale(1.113); opacity: 0.96; }
+  29.17% { transform: translate(95.4px, 200.6px) scale(1.080); opacity: 0.93; }
+  33.33% { transform: translate(85.4px, 194.2px) scale(1.041); opacity: 0.90; }
+  37.50% { transform: translate(80.4px, 185.8px) scale(1.000); opacity: 0.86; }
+  41.67% { transform: translate(80.9px, 176.1px) scale(0.959); opacity: 0.82; }
+  45.83% { transform: translate(86.7px, 165.7px) scale(0.920); opacity: 0.79; }
+  50.00% { transform: translate(97.6px, 155.3px) scale(0.887); opacity: 0.76; }
+  54.17% { transform: translate(112.7px, 145.7px) scale(0.861); opacity: 0.74; }
+  58.33% { transform: translate(131.0px, 137.4px) scale(0.845); opacity: 0.72; }
+  62.50% { transform: translate(151.3px, 131.1px) scale(0.840); opacity: 0.72; }
+  66.67% { transform: translate(172.2px, 127.1px) scale(0.845); opacity: 0.72; }
+  70.83% { transform: translate(192.2px, 125.8px) scale(0.861); opacity: 0.74; }
+  75.00% { transform: translate(210.1px, 127.3px) scale(0.887); opacity: 0.76; }
+  79.17% { transform: translate(224.6px, 131.4px) scale(0.920); opacity: 0.79; }
+  83.33% { transform: translate(234.6px, 137.8px) scale(0.959); opacity: 0.82; }
+  87.50% { transform: translate(239.6px, 146.2px) scale(1.000); opacity: 0.86; }
+  91.67% { transform: translate(239.1px, 155.9px) scale(1.041); opacity: 0.90; }
+  95.83% { transform: translate(233.3px, 166.3px) scale(1.080); opacity: 0.93; }
+  100.00% { transform: translate(222.4px, 176.7px) scale(1.113); opacity: 0.96; }
+}
+@keyframes p4 {
+  0.00% { transform: translate(97.6px, 155.3px) scale(0.887); opacity: 0.76; }
+  4.17% { transform: translate(112.7px, 145.7px) scale(0.861); opacity: 0.74; }
+  8.33% { transform: translate(131.0px, 137.4px) scale(0.845); opacity: 0.72; }
+  12.50% { transform: translate(151.3px, 131.1px) scale(0.840); opacity: 0.72; }
+  16.67% { transform: translate(172.2px, 127.1px) scale(0.845); opacity: 0.72; }
+  20.83% { transform: translate(192.2px, 125.8px) scale(0.861); opacity: 0.74; }
+  25.00% { transform: translate(210.1px, 127.3px) scale(0.887); opacity: 0.76; }
+  29.17% { transform: translate(224.6px, 131.4px) scale(0.920); opacity: 0.79; }
+  33.33% { transform: translate(234.6px, 137.8px) scale(0.959); opacity: 0.82; }
+  37.50% { transform: translate(239.6px, 146.2px) scale(1.000); opacity: 0.86; }
+  41.67% { transform: translate(239.1px, 155.9px) scale(1.041); opacity: 0.90; }
+  45.83% { transform: translate(233.3px, 166.3px) scale(1.080); opacity: 0.93; }
+  50.00% { transform: translate(222.4px, 176.7px) scale(1.113); opacity: 0.96; }
+  54.17% { transform: translate(207.3px, 186.3px) scale(1.139); opacity: 0.98; }
+  58.33% { transform: translate(189.0px, 194.6px) scale(1.155); opacity: 1.00; }
+  62.50% { transform: translate(168.7px, 200.9px) scale(1.160); opacity: 1.00; }
+  66.67% { transform: translate(147.8px, 204.9px) scale(1.155); opacity: 1.00; }
+  70.83% { transform: translate(127.8px, 206.2px) scale(1.139); opacity: 0.98; }
+  75.00% { transform: translate(109.9px, 204.7px) scale(1.113); opacity: 0.96; }
+  79.17% { transform: translate(95.4px, 200.6px) scale(1.080); opacity: 0.93; }
+  83.33% { transform: translate(85.4px, 194.2px) scale(1.041); opacity: 0.90; }
+  87.50% { transform: translate(80.4px, 185.8px) scale(1.000); opacity: 0.86; }
+  91.67% { transform: translate(80.9px, 176.1px) scale(0.959); opacity: 0.82; }
+  95.83% { transform: translate(86.7px, 165.7px) scale(0.920); opacity: 0.79; }
+  100.00% { transform: translate(97.6px, 155.3px) scale(0.887); opacity: 0.76; }
+}
+@keyframes p5 {
+  0.00% { transform: translate(113.6px, 224.0px) scale(1.139); opacity: 0.98; }
+  4.17% { transform: translate(87.9px, 221.9px) scale(1.113); opacity: 0.96; }
+  8.33% { transform: translate(67.1px, 215.9px) scale(1.080); opacity: 0.93; }
+  12.50% { transform: translate(52.7px, 206.6px) scale(1.041); opacity: 0.90; }
+  16.67% { transform: translate(45.5px, 194.5px) scale(1.000); opacity: 0.86; }
+  20.83% { transform: translate(46.2px, 180.5px) scale(0.959); opacity: 0.82; }
+  25.00% { transform: translate(54.6px, 165.5px) scale(0.920); opacity: 0.79; }
+  29.17% { transform: translate(70.1px, 150.5px) scale(0.887); opacity: 0.76; }
+  33.33% { transform: translate(91.9px, 136.6px) scale(0.861); opacity: 0.74; }
+  37.50% { transform: translate(118.2px, 124.7px) scale(0.845); opacity: 0.72; }
+  41.67% { transform: translate(147.4px, 115.5px) scale(0.840); opacity: 0.72; }
+  45.83% { transform: translate(177.5px, 109.9px) scale(0.845); opacity: 0.72; }
+  50.00% { transform: translate(206.4px, 108.0px) scale(0.861); opacity: 0.74; }
+  54.17% { transform: translate(232.1px, 110.1px) scale(0.887); opacity: 0.76; }
+  58.33% { transform: translate(252.9px, 116.1px) scale(0.920); opacity: 0.79; }
+  62.50% { transform: translate(267.3px, 125.4px) scale(0.959); opacity: 0.82; }
+  66.67% { transform: translate(274.5px, 137.5px) scale(1.000); opacity: 0.86; }
+  70.83% { transform: translate(273.8px, 151.5px) scale(1.041); opacity: 0.90; }
+  75.00% { transform: translate(265.4px, 166.5px) scale(1.080); opacity: 0.93; }
+  79.17% { transform: translate(249.9px, 181.5px) scale(1.113); opacity: 0.96; }
+  83.33% { transform: translate(228.1px, 195.4px) scale(1.139); opacity: 0.98; }
+  87.50% { transform: translate(201.8px, 207.3px) scale(1.155); opacity: 1.00; }
+  91.67% { transform: translate(172.6px, 216.5px) scale(1.160); opacity: 1.00; }
+  95.83% { transform: translate(142.5px, 222.1px) scale(1.155); opacity: 1.00; }
+  100.00% { transform: translate(113.6px, 224.0px) scale(1.139); opacity: 0.98; }
+}
+@keyframes p6 {
+  0.00% { transform: translate(206.4px, 108.0px) scale(0.861); opacity: 0.74; }
+  4.17% { transform: translate(232.1px, 110.1px) scale(0.887); opacity: 0.76; }
+  8.33% { transform: translate(252.9px, 116.1px) scale(0.920); opacity: 0.79; }
+  12.50% { transform: translate(267.3px, 125.4px) scale(0.959); opacity: 0.82; }
+  16.67% { transform: translate(274.5px, 137.5px) scale(1.000); opacity: 0.86; }
+  20.83% { transform: translate(273.8px, 151.5px) scale(1.041); opacity: 0.90; }
+  25.00% { transform: translate(265.4px, 166.5px) scale(1.080); opacity: 0.93; }
+  29.17% { transform: translate(249.9px, 181.5px) scale(1.113); opacity: 0.96; }
+  33.33% { transform: translate(228.1px, 195.4px) scale(1.139); opacity: 0.98; }
+  37.50% { transform: translate(201.8px, 207.3px) scale(1.155); opacity: 1.00; }
+  41.67% { transform: translate(172.6px, 216.5px) scale(1.160); opacity: 1.00; }
+  45.83% { transform: translate(142.5px, 222.1px) scale(1.155); opacity: 1.00; }
+  50.00% { transform: translate(113.6px, 224.0px) scale(1.139); opacity: 0.98; }
+  54.17% { transform: translate(87.9px, 221.9px) scale(1.113); opacity: 0.96; }
+  58.33% { transform: translate(67.1px, 215.9px) scale(1.080); opacity: 0.93; }
+  62.50% { transform: translate(52.7px, 206.6px) scale(1.041); opacity: 0.90; }
+  66.67% { transform: translate(45.5px, 194.5px) scale(1.000); opacity: 0.86; }
+  70.83% { transform: translate(46.2px, 180.5px) scale(0.959); opacity: 0.82; }
+  75.00% { transform: translate(54.6px, 165.5px) scale(0.920); opacity: 0.79; }
+  79.17% { transform: translate(70.1px, 150.5px) scale(0.887); opacity: 0.76; }
+  83.33% { transform: translate(91.9px, 136.6px) scale(0.861); opacity: 0.74; }
+  87.50% { transform: translate(118.2px, 124.7px) scale(0.845); opacity: 0.72; }
+  91.67% { transform: translate(147.4px, 115.5px) scale(0.840); opacity: 0.72; }
+  95.83% { transform: translate(177.5px, 109.9px) scale(0.845); opacity: 0.72; }
+  100.00% { transform: translate(206.4px, 108.0px) scale(0.861); opacity: 0.74; }
+}
+.p1 { animation: p1 7.5s linear infinite; }
+.p2 { animation: p2 7.5s linear infinite; }
+.p3 { animation: p3 13.0s linear infinite; }
+.p4 { animation: p4 13.0s linear infinite; }
+.p5 { animation: p5 19.5s linear infinite; }
+.p6 { animation: p6 19.5s linear infinite; }
+    @keyframes sunPulse { 0%, 100% { transform: scale(1); opacity: 0.55; } 50% { transform: scale(1.18); opacity: 0.9; } }
+    .sun-corona { animation: sunPulse 4.2s ease-in-out infinite; }
+    
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    </style>
+  </defs>
+
+  <g clip-path="url(#stackClip)">
+    <rect width="850" height="312" fill="url(#bg)"/>
+    <circle cx="641.9" cy="197.1" r="0.7" fill="#E0F2FE" class="tw1" style="animation-delay:-1.08s"/>
+    <circle cx="341.2" cy="30.0" r="0.7" fill="#BAE6FD" class="tw2" style="animation-delay:-0.20s"/>
+    <circle cx="447.8" cy="71.2" r="1.0" fill="#FBCFE8" class="tw3" style="animation-delay:-4.15s"/>
+    <circle cx="542.3" cy="68.6" r="0.7" fill="#BAE6FD" class="tw1" style="animation-delay:-0.71s"/>
+    <circle cx="396.2" cy="217.1" r="1.0" fill="#FFFFFF" class="tw2" style="animation-delay:-2.87s"/>
+    <circle cx="632.8" cy="140.9" r="1.4" fill="#BAE6FD" class="tw3" style="animation-delay:-1.49s"/>
+    <circle cx="51.7" cy="269.0" r="1.4" fill="#FFFFFF" class="tw1" style="animation-delay:-0.21s"/>
+    <circle cx="228.3" cy="64.2" r="1.4" fill="#FFFFFF" class="tw2" style="animation-delay:-1.97s"/>
+    <circle cx="736.1" cy="209.7" r="1.0" fill="#BAE6FD" class="tw3" style="animation-delay:-5.41s"/>
+    <circle cx="267.3" cy="198.6" r="0.7" fill="#DDD6FE" class="tw1" style="animation-delay:-1.85s"/>
+    <circle cx="392.1" cy="231.5" r="1.9" fill="#FFFFFF" class="tw2" style="animation-delay:-3.37s"/>
+    <circle cx="665.5" cy="125.2" r="1.0" fill="#DDD6FE" class="tw3" style="animation-delay:-1.92s"/>
+    <circle cx="143.9" cy="171.8" r="0.7" fill="#DDD6FE" class="tw1" style="animation-delay:-0.61s"/>
+    <circle cx="176.9" cy="106.1" r="0.7" fill="#FDE68A" class="tw2" style="animation-delay:-5.33s"/>
+    <circle cx="334.5" cy="292.2" r="0.7" fill="#FDE68A" class="tw3" style="animation-delay:-0.93s"/>
+    <circle cx="724.2" cy="206.4" r="1.9" fill="#DDD6FE" class="tw1" style="animation-delay:-5.45s"/>
+    <circle cx="549.2" cy="266.2" r="1.0" fill="#FDE68A" class="tw2" style="animation-delay:-3.06s"/>
+    <circle cx="123.9" cy="29.5" r="0.7" fill="#DDD6FE" class="tw3" style="animation-delay:-3.99s"/>
+    <circle cx="379.2" cy="226.3" r="0.7" fill="#BAE6FD" class="tw1" style="animation-delay:-0.56s"/>
+    <circle cx="478.8" cy="58.5" r="0.7" fill="#FFFFFF" class="tw2" style="animation-delay:-4.43s"/>
+    <circle cx="722.9" cy="38.8" r="0.7" fill="#DDD6FE" class="tw3" style="animation-delay:-1.07s"/>
+    <circle cx="574.0" cy="239.1" r="0.7" fill="#BAE6FD" class="tw1" style="animation-delay:-5.29s"/>
+    <circle cx="777.9" cy="86.2" r="0.7" fill="#E0F2FE" class="tw2" style="animation-delay:-4.32s"/>
+    <circle cx="206.6" cy="203.2" r="1.0" fill="#FBCFE8" class="tw3" style="animation-delay:-0.95s"/>
+    <circle cx="198.7" cy="147.4" r="1.4" fill="#FFFFFF" class="tw1" style="animation-delay:-3.05s"/>
+    <circle cx="30.2" cy="132.7" r="1.9" fill="#FDE68A" class="tw2" style="animation-delay:-1.72s"/>
+    <circle cx="529.9" cy="292.6" r="1.0" fill="#FDE68A" class="tw3" style="animation-delay:-2.06s"/>
+    <circle cx="732.2" cy="174.3" r="1.0" fill="#DDD6FE" class="tw1" style="animation-delay:-1.71s"/>
+    <circle cx="219.3" cy="42.4" r="1.0" fill="#FDE68A" class="tw2" style="animation-delay:-4.26s"/>
+    <circle cx="383.2" cy="123.2" r="1.0" fill="#DDD6FE" class="tw3" style="animation-delay:-4.52s"/>
+    <circle cx="215.9" cy="274.9" r="1.0" fill="#FBCFE8" class="tw1" style="animation-delay:-4.62s"/>
+    <circle cx="795.6" cy="212.8" r="1.4" fill="#E0F2FE" class="tw2" style="animation-delay:-2.02s"/>
+    <circle cx="357.4" cy="146.1" r="0.7" fill="#FBCFE8" class="tw3" style="animation-delay:-4.16s"/>
+    <circle cx="179.1" cy="148.5" r="0.7" fill="#E0F2FE" class="tw1" style="animation-delay:-4.06s"/>
+    <circle cx="489.8" cy="78.6" r="1.9" fill="#FDE68A" class="tw2" style="animation-delay:-1.41s"/>
+    <circle cx="758.9" cy="244.8" r="0.7" fill="#E0F2FE" class="tw3" style="animation-delay:-5.05s"/>
+    <circle cx="378.1" cy="213.1" r="1.0" fill="#DDD6FE" class="tw1" style="animation-delay:-1.85s"/>
+    <circle cx="128.7" cy="278.4" r="1.0" fill="#BAE6FD" class="tw2" style="animation-delay:-0.08s"/>
+    <circle cx="45.7" cy="259.3" r="1.0" fill="#DDD6FE" class="tw3" style="animation-delay:-0.77s"/>
+    <circle cx="77.8" cy="28.0" r="1.0" fill="#DDD6FE" class="tw1" style="animation-delay:-5.26s"/>
+    <circle cx="752.1" cy="281.5" r="0.7" fill="#BAE6FD" class="tw2" style="animation-delay:-1.79s"/>
+    <circle cx="584.6" cy="88.0" r="1.0" fill="#FDE68A" class="tw3" style="animation-delay:-1.17s"/>
+    <circle cx="558.8" cy="260.5" r="1.0" fill="#FDE68A" class="tw1" style="animation-delay:-4.08s"/>
+    <circle cx="248.8" cy="255.5" r="1.0" fill="#BAE6FD" class="tw2" style="animation-delay:-3.91s"/>
+    <circle cx="765.3" cy="168.4" r="0.7" fill="#FDE68A" class="tw3" style="animation-delay:-1.19s"/>
+    <circle cx="66.7" cy="204.3" r="1.4" fill="#E0F2FE" class="tw1" style="animation-delay:-1.83s"/>
+
+    <!-- Section Header -->
+    <text x="34" y="38" fill="#F8FAFC" font-size="15" font-weight="700" letter-spacing="0.8" class="mono">PLANETARY TECH STACK</text>
+    <text x="336" y="38" fill="#94A3B8" font-size="11" letter-spacing="1.1" class="mono">// ORBITING CONSTELLATIONS</text>
+    <line x1="34" y1="49" x2="816" y2="49" stroke="#2A3975" stroke-width="1"/>
+
+    <!-- Left Solar System Orrery -->
+    <g transform="translate(160, 166) rotate(-14)">
+      <ellipse cx="0" cy="0" rx="46" ry="20" fill="none" stroke="#38BDF8" stroke-opacity="0.32" stroke-width="1"/>
+      <ellipse cx="0" cy="0" rx="82" ry="36" fill="none" stroke="#A78BFA" stroke-opacity="0.32" stroke-width="1" stroke-dasharray="4 4"/>
+      <ellipse cx="0" cy="0" rx="118" ry="52" fill="none" stroke="#34D399" stroke-opacity="0.28" stroke-width="1"/>
+    </g>
+
+    <!-- Central Star -->
+    <g transform="translate(160, 166)">
+      <circle cx="0" cy="0" r="36" fill="url(#sunHalo)" class="sun-corona"/>
+      <circle cx="0" cy="0" r="18" fill="url(#sunCore)" filter="url(#softGlow)"/>
+    </g>
+
+    <!-- Orbiting Planets -->
+    <g class="p1"><circle cx="0" cy="0" r="5.2" fill="#38BDF8" filter="url(#softGlow)"/><circle cx="-1.5" cy="-1.5" r="1.7" fill="#FFFFFF" opacity="0.65"/></g><g class="p2"><circle cx="0" cy="0" r="3.8" fill="#FBBF24" filter="url(#softGlow)"/><circle cx="-1.1" cy="-1.1" r="1.2" fill="#FFFFFF" opacity="0.65"/></g><g class="p3"><ellipse cx="0" cy="0" rx="12.9" ry="3.7" transform="rotate(-18)" fill="none" stroke="#E0F2FE" stroke-opacity="0.7" stroke-width="1.3"/><circle cx="0" cy="0" r="6.8" fill="#A78BFA" filter="url(#softGlow)"/><circle cx="-1.9" cy="-1.9" r="2.2" fill="#FFFFFF" opacity="0.65"/></g><g class="p4"><circle cx="0" cy="0" r="4.6" fill="#F472B6" filter="url(#softGlow)"/><circle cx="-1.3" cy="-1.3" r="1.5" fill="#FFFFFF" opacity="0.65"/></g><g class="p5"><circle cx="0" cy="0" r="6.0" fill="#34D399" filter="url(#softGlow)"/><circle cx="-1.7" cy="-1.7" r="1.9" fill="#FFFFFF" opacity="0.65"/></g><g class="p6"><circle cx="0" cy="0" r="4.4" fill="#7DD3FC" filter="url(#softGlow)"/><circle cx="-1.2" cy="-1.2" r="1.4" fill="#FFFFFF" opacity="0.65"/></g>
+
+    <text x="160" y="274" text-anchor="middle" fill="#94A3B8" font-size="10.5" letter-spacing="1.4" class="mono">SOLAR STACK SYSTEM</text>
+
+    <!-- Vertical Divider -->
+    <line x1="312" y1="64" x2="312" y2="282" stroke="#2A3975" stroke-width="1" stroke-dasharray="3 5"/>
+
+    <!-- Categorized Stack Pills -->
+    <g><circle cx="336" cy="70" r="3.5" fill="#38BDF8" filter="url(#softGlow)"/><text x="348" y="74" fill="#94A3B8" font-size="10.5" font-weight="700" letter-spacing="1.2" class="mono">LANGUAGES</text></g><g><rect x="336" y="84" width="97" height="26" rx="13" fill="#0F1738" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/><circle cx="348" cy="97" r="3" fill="#38BDF8"/><text x="357" y="101" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">TypeScript</text></g><g><rect x="441" y="84" width="97" height="26" rx="13" fill="#0F1738" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/><circle cx="453" cy="97" r="3" fill="#38BDF8"/><text x="462" y="101" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">JavaScript</text></g><g><rect x="546" y="84" width="68" height="26" rx="13" fill="#0F1738" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/><circle cx="558" cy="97" r="3" fill="#38BDF8"/><text x="567" y="101" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Python</text></g><g><rect x="622" y="84" width="82" height="26" rx="13" fill="#0F1738" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/><circle cx="634" cy="97" r="3" fill="#38BDF8"/><text x="643" y="101" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">HTML/CSS</text></g><g><rect x="712" y="84" width="62" height="26" rx="13" fill="#0F1738" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1"/><circle cx="724" cy="97" r="3" fill="#38BDF8"/><text x="733" y="101" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">SQL</text></g><g><circle cx="336" cy="126" r="3.5" fill="#A78BFA" filter="url(#softGlow)"/><text x="348" y="130" fill="#94A3B8" font-size="10.5" font-weight="700" letter-spacing="1.2" class="mono">FRONTEND</text></g><g><rect x="336" y="140" width="62" height="26" rx="13" fill="#0F1738" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1"/><circle cx="348" cy="153" r="3" fill="#A78BFA"/><text x="357" y="157" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">React</text></g><g><rect x="406" y="140" width="75" height="26" rx="13" fill="#0F1738" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1"/><circle cx="418" cy="153" r="3" fill="#A78BFA"/><text x="427" y="157" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Next.js</text></g><g><rect x="489" y="140" width="111" height="26" rx="13" fill="#0F1738" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1"/><circle cx="501" cy="153" r="3" fill="#A78BFA"/><text x="510" y="157" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Tailwind CSS</text></g><g><rect x="608" y="140" width="62" height="26" rx="13" fill="#0F1738" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1"/><circle cx="620" cy="153" r="3" fill="#A78BFA"/><text x="629" y="157" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Vite</text></g><g><rect x="678" y="140" width="97" height="26" rx="13" fill="#0F1738" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="1"/><circle cx="690" cy="153" r="3" fill="#A78BFA"/><text x="699" y="157" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">SVG/Motion</text></g><g><circle cx="336" cy="182" r="3.5" fill="#F472B6" filter="url(#softGlow)"/><text x="348" y="186" fill="#94A3B8" font-size="10.5" font-weight="700" letter-spacing="1.2" class="mono">BACKEND</text></g><g><rect x="336" y="196" width="75" height="26" rx="13" fill="#0F1738" stroke="#F472B6" stroke-opacity="0.45" stroke-width="1"/><circle cx="348" cy="209" r="3" fill="#F472B6"/><text x="357" y="213" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Node.js</text></g><g><rect x="419" y="196" width="125" height="26" rx="13" fill="#0F1738" stroke="#F472B6" stroke-opacity="0.45" stroke-width="1"/><circle cx="431" cy="209" r="3" fill="#F472B6"/><text x="440" y="213" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">REST &amp; GraphQL</text></g><g><rect x="552" y="196" width="97" height="26" rx="13" fill="#0F1738" stroke="#F472B6" stroke-opacity="0.45" stroke-width="1"/><circle cx="564" cy="209" r="3" fill="#F472B6"/><text x="573" y="213" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">PostgreSQL</text></g><g><rect x="657" y="196" width="82" height="26" rx="13" fill="#0F1738" stroke="#F472B6" stroke-opacity="0.45" stroke-width="1"/><circle cx="669" cy="209" r="3" fill="#F472B6"/><text x="678" y="213" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Supabase</text></g><g><rect x="747" y="196" width="62" height="26" rx="13" fill="#0F1738" stroke="#F472B6" stroke-opacity="0.45" stroke-width="1"/><circle cx="759" cy="209" r="3" fill="#F472B6"/><text x="768" y="213" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Redis</text></g><g><circle cx="336" cy="238" r="3.5" fill="#34D399" filter="url(#softGlow)"/><text x="348" y="242" fill="#94A3B8" font-size="10.5" font-weight="700" letter-spacing="1.2" class="mono">TOOLS &amp; ORBIT</text></g><g><rect x="336" y="252" width="62" height="26" rx="13" fill="#0F1738" stroke="#34D399" stroke-opacity="0.45" stroke-width="1"/><circle cx="348" cy="265" r="3" fill="#34D399"/><text x="357" y="269" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Git</text></g><g><rect x="406" y="252" width="125" height="26" rx="13" fill="#0F1738" stroke="#34D399" stroke-opacity="0.45" stroke-width="1"/><circle cx="418" cy="265" r="3" fill="#34D399"/><text x="427" y="269" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">GitHub Actions</text></g><g><rect x="539" y="252" width="68" height="26" rx="13" fill="#0F1738" stroke="#34D399" stroke-opacity="0.45" stroke-width="1"/><circle cx="551" cy="265" r="3" fill="#34D399"/><text x="560" y="269" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Docker</text></g><g><rect x="615" y="252" width="62" height="26" rx="13" fill="#0F1738" stroke="#34D399" stroke-opacity="0.45" stroke-width="1"/><circle cx="627" cy="265" r="3" fill="#34D399"/><text x="636" y="269" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">Linux</text></g><g><rect x="685" y="252" width="75" height="26" rx="13" fill="#0F1738" stroke="#34D399" stroke-opacity="0.45" stroke-width="1"/><circle cx="697" cy="265" r="3" fill="#34D399"/><text x="706" y="269" fill="#F8FAFC" font-size="11.5" font-weight="500" class="sans">VS Code</text></g>
+  </g>
+  <rect x="1" y="1" width="848" height="310" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="1.2"/>
+</svg>
